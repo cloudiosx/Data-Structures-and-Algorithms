@@ -1,13 +1,27 @@
 # Time complexity: O(n + m) | Space complexity: O(n)
 def intersection(a, b):
-	intersection = []
-	my_set = set()
+	items_set = set(a)
+  return [ ele for ele in b if ele in items_set ]
 
-	for integer in a:
-		my_set.add(integer)
+def intersection(a, b):
+	result = []
+	items_set = set()
 
-	for integer in b:
-		if integer in my_set:
-			intersection.append(integer)
+	for item in a:
+		items_set.add(item)
 
-	return intersection
+	for ele in b:
+		if ele in items_set:
+			result.append(ele)
+
+	return result
+
+# Time complexity: O(n * m) | Space complexity: O(min(n, m))
+def intersection(a, b):
+  result = []
+  
+  for item in a:
+    if item in b: 
+      result.append(item)
+  
+  return result
