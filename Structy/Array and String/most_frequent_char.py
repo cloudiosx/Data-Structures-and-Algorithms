@@ -1,16 +1,27 @@
 # Time complexity: O(n) | Space complexity: O(n)
+
+# Approach 1
 def most_frequent_char(s):
-	maximum = s[0]
-	hashmap = {}
+	count = {}
+  for char in s:
+    if char not in count:
+      count[char] = 0
+    count[char] += 1
+  
+  best = None
+  for char in s:
+    if best is None or count[char] > count[best]:
+      best = char
+  return best
 
-	for char in s:
-		if char not in hashmap:
-			hashmap[char] = 0
+# Approach 2
+from collections import Counter
 
-		hashmap[char] += 1
-
-	for char in s:
-		if hashmap[char] > hashmap[maximum]:
-			maximum = char
-
-	return maximum
+def most_frequent_char(s):
+  count = Counter(s)
+  
+  best = None
+  for char in s:
+    if best is None or count[char] > count[best]:
+      best = char
+  return best
