@@ -9,3 +9,4 @@ def pair_product(numbers, target_product):
       return (index, previous_nums[complement])
     
     previous_nums[num] = index
+

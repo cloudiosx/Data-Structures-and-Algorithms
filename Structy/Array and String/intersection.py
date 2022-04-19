@@ -25,3 +25,4 @@ def intersection(a, b):
       result.append(item)
   
   return result
+
