@@ -17,3 +17,4 @@ def pair_sum(numbers, target_sum):
 		for j in range(i + 1, len(numbers)):
 			if numbers[i] + numbers[j] == target_sum:
 				return (i, j)
+
