@@ -25,3 +25,4 @@ def most_frequent_char(s):
     if best is None or count[char] > count[best]:
       best = char
   return best
+
