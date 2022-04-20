@@ -18,7 +18,6 @@ def linked_list_find(head, target):
 def linked_list_find(head, target):
   if head is None:
     return False
-  elif head.val == target:
+  if head.val == target:
     return True
-
   return linked_list_find(head.next, target)
