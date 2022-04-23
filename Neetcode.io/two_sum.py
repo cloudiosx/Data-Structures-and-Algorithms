@@ -8,3 +8,13 @@ def twoSum(nums, target):
 			return [idx, hashmap[complement]]
 
 		hashmap[num] = idx
+
+	'''
+	hashmap = {}
+
+	for i in range(len(nums)):
+		complement = target - nums[i]
+		if complement in hashmap:
+			return [i, hashmap[complement]]
+		hashmap[nums[i]] = i
+	'''
