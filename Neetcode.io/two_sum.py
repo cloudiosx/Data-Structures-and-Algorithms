@@ -8,6 +8,7 @@ def twoSum(nums, target):
 			return [idx, hashmap[complement]]
 
 		hashmap[num] = idx
+	return
 
 	'''
 	hashmap = {}
@@ -17,4 +18,5 @@ def twoSum(nums, target):
 		if complement in hashmap:
 			return [i, hashmap[complement]]
 		hashmap[nums[i]] = i
+	return
 	'''
