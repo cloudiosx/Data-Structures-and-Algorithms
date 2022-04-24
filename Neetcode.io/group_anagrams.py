@@ -3,7 +3,7 @@
 
 from collections import defaultdict
 def groupAnagrams(strs):
-    res = defaultdict(list)
+    res = defaultdict(list) # https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work
 
     for str in strs:
         count = [0] * 26 # a ... z
@@ -11,6 +11,6 @@ def groupAnagrams(strs):
         for char in str:
             count[ord(char) - ord("a")] += 1
 
-        res[tuple(count)].append(str)
+        res[tuple(count)].append(str) # https://stackoverflow.com/questions/7257588/why-cant-i-use-a-list-as-a-dict-key-in-python
 
     return res.values()
