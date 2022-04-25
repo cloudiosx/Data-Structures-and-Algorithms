@@ -47,4 +47,3 @@ def breadth_first_values(root):
       queue.append(current.right)
 
   return values
-
