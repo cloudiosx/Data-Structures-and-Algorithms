@@ -18,10 +18,10 @@ def depth_first_values(root):
     current = stack.pop()
     values.append(current.val)
 
-    if stack.right is not None:
+    if current.right is not None:
       stack.append(current.right)
 
-    if stack.left is not None:
+    if current.left is not None:
       stack.append(current.left)
 
   return values
@@ -35,3 +35,4 @@ def depth_first_values(root):
   right_values = depth_first_values(root.right)
 
   return [root.val, *left_values, *right_values]
+

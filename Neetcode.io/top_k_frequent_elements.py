@@ -1,7 +1,7 @@
 # Hashmap | Time: O(n) | Space: O(n) | n = length of the input array
 def topKFrequent(nums, k):
 	count = {}
-	freq = [[] for i in range(len(nums) + 1)]
+	freq = [[] for i inv range(len(nums) + 1)]
 
 	for n in nums:
 		count[n] = 1 + count.get(n, 0)
@@ -15,3 +15,4 @@ def topKFrequent(nums, k):
 			res.append(n)
 			if len(res) == k:
 				return res
+ 
