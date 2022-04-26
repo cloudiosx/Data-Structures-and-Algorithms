@@ -37,3 +37,4 @@ def tree_sum(root):
   right_values = tree_sum(root.right)
 
   return root.val + left_values + right_values
+
