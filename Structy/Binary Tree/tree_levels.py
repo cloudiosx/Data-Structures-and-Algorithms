@@ -1,3 +1,5 @@
+# Time: O(n) | Space: O(n) | n = # of nodes
+
 class Node:
   def __init__(self, val):
     self.val = val
