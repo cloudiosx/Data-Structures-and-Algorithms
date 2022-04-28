@@ -70,6 +70,6 @@ class Solution:
                     queue.append(node.left)
                 if node.right:
                     queue.append(node.right)
-        level += 1
-        
-    return level
+            level += 1
+            
+        return level
