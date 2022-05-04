@@ -1,3 +1,5 @@
+# Time: O(n) | Space: O(n) | n = length of string
+
 def compress(s):
 	s += '!'
 	i = 0

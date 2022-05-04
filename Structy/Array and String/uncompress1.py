@@ -1,3 +1,5 @@
+# Time: O(n*m) | Space: O(n*m) | n = number of groups, m = max num found in any group
+
 def uncompress(s):
 	# Alphabet
 	# alphabet = "abcdefghijklmnopqrstuvwxyz"
