@@ -1,3 +1,5 @@
+# Time: O(n + m) | Space: O(n + m) | n = length of string 1, m = length of string 2
+
 def anagrams(s1, s2):
 	hashmap_s1 = {}
 	hashmap_s2 = {}
